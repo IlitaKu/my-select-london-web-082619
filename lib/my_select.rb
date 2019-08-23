@@ -1,6 +1,6 @@
 def my_select(collection)
  sorted = []
  collection.each do |el|
-   yield el.even?
+   sorted << yield el
  end
 end
